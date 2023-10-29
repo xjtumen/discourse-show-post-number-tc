@@ -3,4 +3,4 @@ Discourse theme component that will show the the post number for posts.
 
 Screenshot:
 
-![post](screenshot/post2.png)
+![post](screenshot.webp)
