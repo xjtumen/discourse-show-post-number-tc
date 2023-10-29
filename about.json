@@ -1,6 +1,5 @@
 {
-  "name": "Post Views Counter",
-  "about_url": "https://github.com/muhlisbc/discourse-post-views-counter-theme",
-  "license_url": "https://raw.githubusercontent.com/muhlisbc/discourse-post-views-counter-theme/master/LICENSE",
+  "name": "Post Number Indicator",
+  "about_url": "https://github.com/xjtumen/discourse-show-post-number-tc",
   "component": true
 }
