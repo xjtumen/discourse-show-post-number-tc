@@ -1,2 +1,2 @@
 en:
-  views: "# {{num}}"
+  views: "No.{{num}} post in this topic"

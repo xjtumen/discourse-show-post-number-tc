@@ -1,6 +1,5 @@
-# discourse-post-number-indicator-theme
-
-Discourse theme that will show the views (reads) count for posts.
+# discourse-show-post-number-tc
+Discourse theme component that will show the the post number for posts.
 
 Screenshot:
 
