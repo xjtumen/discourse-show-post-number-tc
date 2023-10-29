@@ -20,7 +20,7 @@ function initWithApi(api) {
 
       if (postDateIdx < 0) return infos;
 
-      const reads = attrs.postNumber || 0;
+      const reads = attrs.post_number;
       const views = h(
         "div.post-views-counter",
         {
