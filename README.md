@@ -1,4 +1,4 @@
-# discourse-post-views-counter-theme
+# discourse-post-number-indicator-theme
 
 Discourse theme that will show the views (reads) count for posts.
 

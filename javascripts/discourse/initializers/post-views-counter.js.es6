@@ -1,6 +1,5 @@
 import { withPluginApi } from "discourse/lib/plugin-api";
 import { h } from "virtual-dom";
-import { iconNode } from "discourse-common/lib/icon-library";
 
 function initWithApi(api) {
   api.reopenWidget("post-meta-data", {
@@ -20,13 +19,13 @@ function initWithApi(api) {
 
       if (postDateIdx < 0) return infos;
 
-      const reads = attrs.post_number;
+      const post_number = attrs.post_number;
       const views = h(
-        "div.post-views-counter",
+        "div.post-number-indicator",
         {
-          title: I18n.t(themePrefix("views"), { num: reads })
+          title: I18n.t(themePrefix("views"), { num: post_number })
         },
-        [reads, iconNode("far-eye")]
+        [post_number]
       );
 
       childs.insertAt(postDateIdx, views);
@@ -39,7 +38,7 @@ function initWithApi(api) {
 }
 
 export default {
-  name: "post-views-counter-theme",
+  name: "post-number-indicator-theme",
 
   initialize() {
     withPluginApi("0.8.7", initWithApi);
