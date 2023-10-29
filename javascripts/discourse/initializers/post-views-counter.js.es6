@@ -15,7 +15,7 @@ function initWithApi(api) {
 
       const childs = infos[postInfosIdx].children || [];
       const postDateIdx = childs.findIndex(i => {
-        return i.properties && i.properties.className == "post-info post-date";
+        return Object.getPrototypeOf(i) && Object.getPrototypeOf(i).tagName && Object.getPrototypeOf(i).tagName == "div.post-info.post-date";
       });
 
       if (postDateIdx < 0) return infos;
